@@ -8,6 +8,9 @@ import (
 
 func RunCLI() {
 	cli := &cli.App{
+		Name: "prom",
+		Description: "A simple project management tool written in Go.",
+		Usage: "simple project management.",
 		Commands: []*cli.Command{
 			{
 				Name:    "init",
